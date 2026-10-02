@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site com Cartões</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b2341;
+            color: white;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            background-color: #102f55;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cartao {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 160px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        #cartao1 {
+          background-color: #1500FF;
+          color: #F3FFB7;
+        }
+
+        #cartao2 {
+          color: #FB82F7;
+          background-color: #4D3636;
+        }
+
+        #cartao3 {
+          background-color: #2FBC3A;
+          color: #000DBE;
+        }
+
+        #cartao4 {
+          background-color: #CCCC22;
+          color: #CD1D1D;
+        }
+
+        #cartao5 {
+          background-color: #FFDD00;
+          color: #2400D6;
+        }
+
+               #cartao6 {
+          background-color: #8100D6;
+          color: #62FF00;
+        }
+
+        #cartao7 {
+          background-color: #BB0000;
+          color: #FF8000;
+        }
+        #cartao8 {
+          background-color: #264319;
+          color: #E7C9E8;
+        }
+
+
+
+
+        /* Quando a tela ficar menor, organiza em 2 colunas */
+        @media (max-width: 850px) {
+            .cartoes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <p>Exemplo de página semântica com cartões</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+        <div class="cartoes">
+
+            <div class="cartao" id="cartao1">
+                <h2>René Descartes</h2>
+                <p>
+                    Penso, logo existo.
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao2">
+                <h2>Sócrates</h2>
+                <p>
+                    A vida não examinada não vale a pena ser vivida.
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao3">
+                <h2>Friedrich Nietzsche</h2>
+                <p>
+                    O que não me destrói torna-me mais forte.
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao4">
+                <h2>William Shakespeare</h2>
+                <p>
+                    Ser ou não ser, eis a questão.
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao5">
+                <h2>Antoine de Saint-Exupéry</h2>
+                <p>
+                    O essencial é invisível aos olhos.
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao6">
+                <h2>Clarice Lispector</h2>
+                <p>
+                    Não se preocupe em entender, pois viver é melhor que compreender.
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao7">
+                <h2>Albert Einstein</h2>
+                <p>
+                    Duas coisas são infinitas: o universo e a estupidez humana; e só não tenho certeza sobre o primeiro.
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao8">
+                <h2>Nelson Mandela</h2>
+                <p>
+                    A educação é a arma mais poderosa que você pode usar para mudar o mundo.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - Meu Site</p>
+    </footer>
+
+</body>
+</html>
